@@ -101,8 +101,15 @@ function renderProjects() {
       document.documentElement.lang = lang;
       document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
       localStorage.setItem('lang', lang);
-      renderProjects(); // ← أضف هذا السطر
+      renderProjects();
     }
+    
+    applyLanguage(currentLang);
+    
+    langToggle.addEventListener('click', function () {
+      currentLang = currentLang === 'en' ? 'ar' : 'en';
+      applyLanguage(currentLang);
+    });
   });
   
   // ===== Contact Form =====
