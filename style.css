@@ -240,8 +240,11 @@
     color: #93c5fd;
   }
   
+  .dark-mode .hero-greeting {
+    color: #93c5fd;
+  }
   .dark-mode .hero-title {
-    color: #60a5fa;
+    color: rgb(97, 166, 250);
   }
   
   .dark-mode .card {
@@ -266,4 +269,19 @@
     margin-left: 0 !important;
   }
   
+  .profile-img {
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+    object-fit:cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+
+  .dark-mode .nav-link {
+    color: #f1f5f9 !important;
+  }
+  
+  .dark-mode .navbar-brand {
+    color: #93c5fd !important;
+  }
   
